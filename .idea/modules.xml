@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/academic exchange forum.iml" filepath="$PROJECT_DIR$/.idea/academic exchange forum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../vanna/vanna/.idea/vanna.iml" filepath="$PROJECT_DIR$/../vanna/vanna/.idea/vanna.iml" />
+    </modules>
+  </component>
+</project>

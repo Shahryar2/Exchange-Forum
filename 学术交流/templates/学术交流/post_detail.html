@@ -1,0 +1,116 @@
+<!-- post_detail.html -->
+{% extends "学术交流/base.html" %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="{% url 'post_list' %}" class="text-decoration-none">
+                    <i class="fas fa-list-ul me-1"></i>帖子列表
+                </a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">{{ post.title }}</li>
+        </ol>
+    </nav>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h1 class="h2 mb-0">{{ post.title }}</h1>
+                {% if user == post.author %}
+                <div class="btn-group">
+                    <a href="{% url 'post_edit' pk=post.pk %}" class="btn btn-outline-primary btn-sm">
+                        <i class="fas fa-edit me-1"></i>编辑
+                    </a>
+                    <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                        <i class="fas fa-trash-alt me-1"></i>删除
+                    </button>
+                </div>
+                {% endif %}
+            </div>
+
+            <div class="d-flex align-items-center text-muted mb-4">
+                <div class="me-3">
+                    <i class="fas fa-user me-1"></i>{{ post.author }}
+                </div>
+                <div class="me-3">
+                    <i class="far fa-clock me-1"></i>{{ post.created_date|date:"Y-m-d H:i" }}
+                </div>
+                {% if post.created_date != post.updated_date %}
+                <div>
+                    <i class="fas fa-edit me-1"></i>更新于 {{ post.updated_date|date:"Y-m-d H:i" }}
+                </div>
+                {% endif %}
+            </div>
+
+            <div class="post-content mb-4">
+                {{ post.content|linebreaks }}
+            </div>
+
+            {% if post.tags.all %}
+            <div class="mb-4">
+                {% for tag in post.tags.all %}
+                <span class="badge bg-secondary me-1">
+                    <i class="fas fa-tag me-1"></i>{{ tag.name }}
+                </span>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% if user == post.author %}
+<!-- 删除确认对话框 -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">确认删除</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                您确定要删除这篇帖子吗？此操作不可撤销。
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                <form method="post" action="{% url 'post_delete' pk=post.pk %}" class="d-inline">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-danger">
+                        <i class="fas fa-trash-alt me-1"></i>确认删除
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<style>
+.post-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+</style>
+
+<h3>评论</h3>
+{% for comment in post.comments.all %}
+  <p>{{ comment.author.username }} - {{ comment.created_at }}</p>
+  <p>{{ comment.content }}</p>
+{% empty %}
+  <p>暂无评论。</p>
+{% endfor %}
+
+{% if user.is_authenticated %}
+  <form method="post">
+    {% csrf_token %}
+    <input type="text" name="comment_content">
+    <input type="submit" value="发表评论">
+  </form>
+{% else %}
+  <p>登录后发表评论。</p>
+{% endif %}
+{% endblock %}

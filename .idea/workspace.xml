@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="843b6322-fe76-4ffe-871b-3427b73c394f" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/学术交流论坛.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/学术交流/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/学术交流/templates/学术交流/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/学术交流/templates/学术交流/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/学术交流/templates/学术交流/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/学术交流/templates/学术交流/login_error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/学术交流/templates/学术交流/post_create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/学术交流/templates/学术交流/post_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/学术交流/templates/学术交流/post_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/学术交流/templates/学术交流/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/学术交流/templates/学术交流/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/学术交流/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/学术交流论坛/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/学术交流论坛/asgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/学术交流论坛/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/学术交流论坛/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/学术交流论坛/wsgi.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Unit Test" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2h0IO4Z9ZVdyFJmlHnXewplfXPA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Django Server.学术交流论坛.executor": "Run",
+    "Django 服务器.学术交流论坛.executor": "Run",
+    "Python 测试.Python tests in test_math_method.py.executor": "Run",
+    "Python 测试.Python 测试 (test_math_method.py 内).executor": "Run",
+    "Python.run.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.test_demo.executor": "Run",
+    "Python.test_math_suite.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/MetaGPT",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\学术交流论坛\test_demo_" />
+      <recent name="D:\学术交流论坛\test_demo" />
+      <recent name="D:\学术交流论坛\学术交流\templates\学术交流" />
+      <recent name="D:\学术交流论坛\学术交流\templates" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="学术交流论坛" type="Python.DjangoServer" factoryName="Django server">
+      <module name="academic exchange forum" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="学术交流论坛.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.10 (学术交流论坛)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="localhost" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-PY-241.15989.155" />
+        <option value="bundled-python-sdk-babbdf50b680-7c6932dee5e4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.15989.155" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="843b6322-fe76-4ffe-871b-3427b73c394f" name="更改" comment="" />
+      <created>1716724533167</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716724533167</updated>
+      <workItem from="1716724537180" duration="107000" />
+      <workItem from="1716724650217" duration="5773000" />
+      <workItem from="1716730734712" duration="294000" />
+      <workItem from="1716731149643" duration="152000" />
+      <workItem from="1716770690344" duration="6979000" />
+      <workItem from="1716880121900" duration="3975000" />
+      <workItem from="1716945069333" duration="8777000" />
+      <workItem from="1716967103063" duration="4356000" />
+      <workItem from="1716972082592" duration="1574000" />
+      <workItem from="1717031660927" duration="11987000" />
+      <workItem from="1717376222669" duration="1248000" />
+      <workItem from="1717399062186" duration="7001000" />
+      <workItem from="1717463244119" duration="8631000" />
+      <workItem from="1717484845405" duration="9414000" />
+      <workItem from="1717548712103" duration="3637000" />
+      <workItem from="1717574013352" duration="5431000" />
+      <workItem from="1717636097118" duration="8598000" />
+      <workItem from="1717657881197" duration="9250000" />
+      <workItem from="1717720598806" duration="5640000" />
+      <workItem from="1718268491142" duration="4114000" />
+      <workItem from="1721962244838" duration="1830000" />
+      <workItem from="1722160014964" duration="1230000" />
+      <workItem from="1722396718360" duration="7329000" />
+      <workItem from="1728810253550" duration="35000" />
+      <workItem from="1731845061646" duration="2177000" />
+      <workItem from="1733231227358" duration="1143000" />
+      <workItem from="1733299933955" duration="1286000" />
+      <workItem from="1733301243215" duration="8079000" />
+      <workItem from="1733382650553" duration="2642000" />
+      <workItem from="1733398940488" duration="4921000" />
+      <workItem from="1733468276108" duration="684000" />
+      <workItem from="1734440569069" duration="3232000" />
+      <workItem from="1734481923864" duration="609000" />
+      <workItem from="1734489252082" duration="621000" />
+      <workItem from="1734523980189" duration="5126000" />
+      <workItem from="1734568716221" duration="1832000" />
+      <workItem from="1734575575365" duration="2562000" />
+      <workItem from="1734677844918" duration="301000" />
+      <workItem from="1734699953582" duration="1438000" />
+      <workItem from="1734764951302" duration="2959000" />
+      <workItem from="1734767959847" duration="2476000" />
+      <workItem from="1734955967677" duration="36000" />
+      <workItem from="1734956139266" duration="2643000" />
+      <workItem from="1735216932141" duration="839000" />
+      <workItem from="1735885659097" duration="14000" />
+      <workItem from="1736602707520" duration="25000" />
+      <workItem from="1736839710674" duration="19000" />
+      <workItem from="1736840936407" duration="1000" />
+      <workItem from="1740140707460" duration="651000" />
+      <workItem from="1742376949061" duration="1643000" />
+      <workItem from="1742436781792" duration="3000" />
+      <workItem from="1742545442584" duration="1599000" />
+      <workItem from="1742558119539" duration="1688000" />
+      <workItem from="1742862734730" duration="2127000" />
+      <workItem from="1742864905938" duration="192000" />
+      <workItem from="1742865108962" duration="1014000" />
+      <workItem from="1742866512977" duration="781000" />
+      <workItem from="1743043491761" duration="51000" />
+      <workItem from="1743497683545" duration="448000" />
+      <workItem from="1743594651776" duration="33000" />
+      <workItem from="1745655261459" duration="3718000" />
+      <workItem from="1745723466268" duration="2580000" />
+      <workItem from="1746674964225" duration="12000" />
+      <workItem from="1746776396426" duration="1753000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/$.coverage" NAME=" 覆盖结果" MODIFIED="1734767663148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_demo" />
+    <SUITE FILE_PATH="coverage/academic_exchange_forum$run.coverage" NAME="run 覆盖结果" MODIFIED="1734768269216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_demo" />
+    <SUITE FILE_PATH="coverage/$run.coverage" NAME="run 覆盖结果" MODIFIED="1734767747557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_demo" />
+    <SUITE FILE_PATH="coverage/$test.coverage" NAME="test 覆盖结果" MODIFIED="1733400862379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$test_demo.coverage" NAME="test_demo 覆盖结果" MODIFIED="1734441887446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_demo" />
+    <SUITE FILE_PATH="coverage/academic_exchange_forum$.coverage" NAME=" 覆盖结果" MODIFIED="1734768263579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_demo" />
+    <SUITE FILE_PATH="coverage/$test_math_suite.coverage" NAME="test_math_suite 覆盖结果" MODIFIED="1734767739074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_demo" />
+  </component>
+</project>

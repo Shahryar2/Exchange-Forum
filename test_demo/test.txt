@@ -1,0 +1,17 @@
+test_negative_zero0 (test_math_method.TestMathMethod) ... ok
+test_negative_zero1 (test_math_method.TestMathMethod) ... ok
+test_positive_negative0 (test_math_method.TestMathMethod) ... ok
+test_positive_negative1 (test_math_method.TestMathMethod) ... ok
+test_positive_zero0 (test_math_method.TestMathMethod) ... ok
+test_positive_zero1 (test_math_method.TestMathMethod) ... ok
+test_two_float0 (test_math_method.TestMathMethod) ... ok
+test_two_float1 (test_math_method.TestMathMethod) ... ok
+test_two_negative0 (test_math_method.TestMathMethod) ... ok
+test_two_negative1 (test_math_method.TestMathMethod) ... ok
+test_two_positive0 (test_math_method.TestMathMethod) ... ok
+test_two_positive1 (test_math_method.TestMathMethod) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.002s
+
+OK

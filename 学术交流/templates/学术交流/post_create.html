@@ -1,0 +1,177 @@
+{% extends "学术交流/base.html" %}
+
+{% block title %}发布新帖子{% endblock %}
+
+{% block extra_css %}
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
+<style>
+.note-editor {
+    margin-bottom: 1rem;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="container py-4">
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="{% url 'post_list' %}" class="text-decoration-none">
+                    <i class="fas fa-list-ul me-1"></i>帖子列表
+                </a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">发布新帖子</li>
+        </ol>
+    </nav>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h1 class="card-title h3 mb-4 text-center">
+                        <i class="fas fa-pen-fancy me-2"></i>发布新帖子
+                    </h1>
+
+                    {% if form.errors %}
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <h4 class="alert-heading">发布失败</h4>
+                        <ul class="mb-0">
+                        {% for field, errors in form.errors.items %}
+                            {% for error in errors %}
+                            <li>{{ error }}</li>
+                            {% endfor %}
+                        {% endfor %}
+                        </ul>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                    </div>
+                    {% endif %}
+
+                    <form method="post" class="needs-validation" novalidate>
+                        {% csrf_token %}
+                        <div class="mb-4">
+                            <label for="title" class="form-label">
+                                <i class="fas fa-heading me-1"></i>标题
+                            </label>
+                            <input type="text" class="form-control form-control-lg" id="title" name="title" 
+                                   placeholder="请输入帖子标题" required>
+                            <div class="invalid-feedback">
+                                请输入帖子标题
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="content" class="form-label">
+                                <i class="fas fa-paragraph me-1"></i>内容
+                            </label>
+                            <textarea class="form-control" id="content" name="content" rows="10" 
+                                      placeholder="请输入帖子内容" required></textarea>
+                            <div class="invalid-feedback">
+                                请输入帖子内容
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="tags" class="form-label">
+                                <i class="fas fa-tags me-1"></i>标签
+                            </label>
+                            <input type="text" class="form-control" id="tags" name="tags" 
+                                   placeholder="用逗号分隔多个标签，如：学术,研究,讨论">
+                            <div class="form-text">
+                                添加标签可以让其他用户更容易找到您的帖子（可选）
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <button type="button" class="btn btn-outline-secondary" onclick="previewPost()">
+                                <i class="fas fa-eye me-2"></i>预览
+                            </button>
+                            <div>
+                                <a href="{% url 'post_list' %}" class="btn btn-light me-2">
+                                    <i class="fas fa-times me-2"></i>取消
+                                </a>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-paper-plane me-2"></i>发布
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 预览模态框 -->
+<div class="modal fade" id="previewModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">预览帖子</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <h3 id="previewTitle"></h3>
+                <hr>
+                <div id="previewContent"></div>
+                <div id="previewTags" class="mt-3"></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('#content').summernote({
+        placeholder: '请输入帖子内容',
+        height: 300,
+        toolbar: [
+            ['style', ['style']],
+            ['font', ['bold', 'underline', 'clear']],
+            ['color', ['color']],
+            ['para', ['ul', 'ol', 'paragraph']],
+            ['table', ['table']],
+            ['insert', ['link', 'picture']],
+            ['view', ['fullscreen', 'codeview', 'help']]
+        ]
+    });
+});
+
+function previewPost() {
+    const title = $('#title').val();
+    const content = $('#content').val();
+    const tags = $('#tags').val();
+    
+    $('#previewTitle').text(title || '未填写标题');
+    $('#previewContent').html(content || '未填写内容');
+    
+    if (tags) {
+        const tagHtml = tags.split(',').map(tag => 
+            `<span class="badge bg-secondary me-1"><i class="fas fa-tag me-1"></i>${tag.trim()}</span>`
+        ).join('');
+        $('#previewTags').html(tagHtml);
+    } else {
+        $('#previewTags').html('');
+    }
+    
+    new bootstrap.Modal(document.getElementById('previewModal')).show();
+}
+
+// 表单验证
+(function () {
+    'use strict'
+    var forms = document.querySelectorAll('.needs-validation')
+    Array.prototype.slice.call(forms).forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
+            form.classList.add('was-validated')
+        }, false)
+    })
+})()
+</script>
+{% endblock %}

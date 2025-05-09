@@ -1,0 +1,31 @@
+{% extends "学术交流/base.html" %}
+
+{% block title %}登录失败{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm border-danger">
+                <div class="card-body text-center">
+                    <div class="mb-4">
+                        <i class="fas fa-exclamation-circle text-danger" style="font-size: 4rem;"></i>
+                    </div>
+                    <h2 class="card-title mb-3">登录失败</h2>
+                    <p class="card-text text-muted mb-4">
+                        用户名或密码错误，请重新尝试登录。
+                    </p>
+                    <div class="d-grid gap-2">
+                        <a href="{% url 'login' %}" class="btn btn-primary">
+                            <i class="fas fa-sign-in-alt me-2"></i>重新登录
+                        </a>
+                        <a href="{% url 'register' %}" class="btn btn-outline-secondary">
+                            <i class="fas fa-user-plus me-2"></i>注册新账号
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
